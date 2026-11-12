@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un documento HTML-->
+
+<html lang="es"><!--aAqui incia mi página con la etiqueta HTML-->
+<head><!--aquí en el head se pone todo lo que no es visible pero lo haga funcionar-->
+<!--Con los metadatos puedocolocar carácteres especiales, datos, información que ayudarán al posicionamiento web-->
+<meta charset="UTF-8"><!--Permite caracteres especiales-->
+  <meta name="description" content="El top de tres de reggaeton mexa">
+  <meta name="author" content="Fabian Cruz">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
 <title>RadioFabs</title>
 </head>
 <body>
 
-<h1>RadioFabs</h1>
-<p>Escucha el top 3 de REGGAETON MEXA</p>
+    <div class="container-musical">
+    <img src="images (2).jpg" alt="Imagen de musical app" class="imagen-portada">
+
+    <h1>RadioFabs</h1>
+    <p class="pmusical">Escucha el top 3 de REGGAETON MEXA</p>
+
+        <div class="lista-canciones">
+        <!--CANCION -->
+        <div class="canciones">
+            <p>01. Secunena</p>
+                <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="SSecunena.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+        <div class="canciones">
+            <p>02. La Princesa Shakira</p>
+                <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Princesa.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+        <div class="canciones">
+            <p>03. Ronroneame</p>
+                <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Ronroneame.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
