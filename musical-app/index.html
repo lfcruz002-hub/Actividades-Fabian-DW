@@ -21,13 +21,12 @@
 
     <h1>RadioFabs</h1>
     <p class="pmusical">Escucha el top 3 de REGGAETON MEXA</p>
-
+<!-- 
         <div class="lista-canciones">
-        <!--CANCION -->
-        <div class="canciones">
+        
+         <div class="canciones">
             <p>01. Secunena</p>
                 <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
                     <source src="SSecunena.mp3" type="audio/mpeg">
                 </audio>
         </div>
@@ -35,7 +34,6 @@
         <div class="canciones">
             <p>02. La Princesa Shakira</p>
                 <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
                     <source src="Princesa.mp3" type="audio/mpeg">
                 </audio>
         </div>
@@ -43,13 +41,29 @@
         <div class="canciones">
             <p>03. Ronroneame</p>
                 <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
                     <source src="Ronroneame.mp3" type="audio/mpeg">
                 </audio>
+        </div> -->
+        <!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">01. Secunena</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="SSecunena.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
         </div>
+      </div>
         </div>
     </div>
 
-
+<script src="script.js"></script>
 </body>
 </html>
